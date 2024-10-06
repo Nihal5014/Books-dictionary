@@ -1,0 +1,17 @@
+textbooks = {'Math' : ' £5', 'English':'£4', 'geogrpahy': '£6', 'Physics': '£3'}
+
+textbooks['physics'] = '£2'
+print(textbooks)
+
+textbooks['chemistry']= '£6'
+print(textbooks)
+textbooks['biology']= '£7'
+print(textbooks)
+
+customer = input('What book would you like to purchase?')
+print( 'You have selected',customer)
+
+if customer in textbooks:
+    print('The value for your item is',textbooks[customer])
+else:
+    print('Your item is not available. Please select something else.')
